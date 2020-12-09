@@ -12,6 +12,7 @@ const alphabet = document.getElementById('alphabet')
 const miss = document.getElementById('miss')
 const test = document.getElementById('ccc')
 const test2 = document.getElementById('ddd')
+const final = document.getElementById('final')
 
 
 
@@ -95,6 +96,7 @@ function popUp(){
         $("#pop-up").css('display', 'block');
         $("#pop-up").css('opacity', '0');
         fadeIn();
+        final.innerHTML += 'Answer: ' + answer
 
     }
 }
@@ -175,5 +177,5 @@ popUp();
 initWord();
 showWord();
 
-test.innerHTML = answer
+//test.innerHTML = answer
 
